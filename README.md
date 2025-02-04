@@ -2,6 +2,14 @@
 
 This repository contains starter code and resources for Social Coding workshops covering 1-off fun subjects like generative art, coding competitions, code reading sessions or pseudocoding.
 
+## **Authors**  
+
+- Gennadii Ershov  
+- Jola-Moses  
+- Omer Awadalkareem  
+- Reem Osama  
+- Thilakan Jegatheeswaran
+
 ## Running Python Files in this Repository
 
 - **Running a plain Python script**:
