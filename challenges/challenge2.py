@@ -29,3 +29,34 @@ What changes would you recommend to enhance security and minimize excessive acce
 # -*- coding: utf-8 -*-
 
 """
+at_least_one = finance_access.union(tech_access).union(all_access)
+both_fincance_tech = finance_access.intersection(tech_access)
+exclusive = (finance_access.intersection(tech_access))
+
+#lack access
+lack_access = []
+for i in All_employees:
+    has_access = False
+    for j in at_least_one:
+        if i == j :
+            has_access = True
+    if has_access == False:
+        lack_access.append(i)
+        
+print (lack_access)
+
+overlap = both_fincance_tech
+
+    """
+    _Recommendation
+    We recommend do add one more group that include 
+    employeeID who have access to both finance and tech 
+    data to manage this group separately_
+    """
+
+
+#Oleksandr Maksymikhin
+#Momtaz Yaqubi
+#Rafaa Ali
+#Derek Karungani
+#Myint Myat

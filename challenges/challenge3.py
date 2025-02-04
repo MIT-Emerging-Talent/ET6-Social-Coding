@@ -20,3 +20,8 @@ Who is left out? Identify employees without access.
 Are there risks? Indicate employees who might be exposed to unnecessary data.
 Your output should visually highlight these relationships without explicitly listing them in a simple table or list. Think beyond just printing data—use a format that helps detect patterns at a glance.
 """
+from matplotlib_venn import venn2
+import matplotlib.pyplot as plt
+
+venn2([finance_access,tech_access], set_labels =('Finace','Tech'))
+plt.show()
