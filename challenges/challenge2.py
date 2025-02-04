@@ -2,6 +2,15 @@
 """
 Created on Thu Jan 30 15:30:30 2025
 
+Group name: Salle 8
+Group members: Dadi Ishimwe
+              Robel Mengsteab
+              Safa Saber
+              Louis Kervens Hubert
+              M Jawid Mohseni
+              Mohamed El - nageeb
+
+
 @author: somai
 Challenge 2: Digital Access Control
 Objective
@@ -29,3 +38,6 @@ What changes would you recommend to enhance security and minimize excessive acce
 # -*- coding: utf-8 -*-
 
 """
+#1: finance_access OR tech_access OR Admin (have access to at least one type data)
+#2: Admin = E0001 (Admin has access to both financial and technical data)
+#3: 

@@ -2,6 +2,14 @@
 """
 Created on Thu Jan 30 15:30:30 2025
 
+Group name: Salle 8
+Group members: Dadi Ishimwe
+              Robel Mengsteab
+              Safa Saber
+              Louis Kervens Hubert
+              M Jawid Mohseni
+              Mohamed El - nageeb
+
 @author: somai
 Challenge 1: Detecting Suspicious Login Attempts
 Objective:
@@ -26,3 +34,9 @@ Apply Boolean law to simplify it.
 Interpret what the final expression means in the context of allowing or blocking a login attempt.
 
 """
+#¬(A∧(B∨¬B))
+#¬(A∧(True))
+#¬(A∧(1))
+#¬(A)
+
+# the authentication system is blocked by incorrect login credentials and not whether the device is trusted or not.
