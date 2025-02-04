@@ -9,6 +9,8 @@ Group members: Dadi Ishimwe
               Louis Kervens Hubert
               M Jawid Mohseni
               Mohamed El - nageeb
+              Franklyn Abanihe
+              Mariia Ermishina
 
 
 @author: somai

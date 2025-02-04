@@ -11,6 +11,8 @@ Group members: Dadi Ishimwe
               Louis Kervens Hubert
               M Jawid Mohseni
               Mohamed El - nageeb
+              Franklyn Abanihe
+              Mariia Ermishina
 
 Challenge 3: Access Visualization
 Objective
