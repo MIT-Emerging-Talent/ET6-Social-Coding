@@ -40,4 +40,4 @@ print("Who has exclusive access to only one type of data? ", finance_access ^ te
 # Which employees currently lack access (but exist in the system)?
 print("Which employees currently lack access (but exist in the system)? ", new_employee)
 # Are there unnecessary overlaps in access that could pose a security risk?
-print("Are there unnecessary overlaps in access that could pose a security risk? No.")
+print("Are there unnecessary overlaps in access that could pose a security risk? No")
