@@ -40,3 +40,16 @@ Interpret what the final expression means in the context of allowing or blocking
 #¬(A)
 
 # the authentication system is blocked by incorrect login credentials and not whether the device is trusted or not.
+def check_login(A, B):
+    """
+    A: Correct credentials
+    B: Trusted device
+    Returns: Whether login should be blocked
+    """
+    return not A  # Simplified from ¬(A∧(B∨¬B))
+
+# Test cases
+print("Credentials correct, trusted device:", check_login(True, True))
+print("Credentials correct, untrusted device:", check_login(True, False))
+print("Credentials wrong, trusted device:", check_login(False, True))
+print("Credentials wrong, untrusted device:", check_login(False, False))

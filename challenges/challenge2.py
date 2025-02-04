@@ -38,6 +38,26 @@ What changes would you recommend to enhance security and minimize excessive acce
 # -*- coding: utf-8 -*-
 
 """
-#1: finance_access OR tech_access OR Admin (have access to at least one type data)
-#2: Admin = E0001 (Admin has access to both financial and technical data)
-#3: 
+finance_access = {"E0435", "E1021", "E3098", "E7642", "E8873", "E6590"}
+tech_access = {"E7642", "E8873", "E6590", "E9812", "E4520"}
+
+# 1 - finance_access OR tech_access
+at_least_one = finance_access | tech_access
+
+# 2 - Team = finance_access AND tech_access 
+both_access = finance_access & tech_access
+
+# 3 - finance_access_exclusive {"E0435", "E1021", "E3098"}  
+exclusive_finance = finance_access - tech_access
+
+# 3 - tech_access_exclusive {"E9812", "E4520"}
+exclusive_tech = tech_access - finance_access
+
+# 4 - no_access = new_employee E9999
+all_employees = {"E0001", "E9999", "E0435", "E1021", "E3098", "E7642", "E8873", "E6590", "E9812", "E4520"}
+no_access = all_employees - (finance_access | tech_access)
+
+# 5 - overlap_risk = finance_access AND tech_access
+overlap = finance_access & tech_access
+
+# The should not share common dates and Grant employees only the access they absolutely need to perform their job duties.
