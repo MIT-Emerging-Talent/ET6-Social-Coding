@@ -26,3 +26,14 @@ Apply Boolean law to simplify it.
 Interpret what the final expression means in the context of allowing or blocking a login attempt.
 
 """
+not(A and(B or not B))
+not (A and True)
+not A
+
+The login credentials are not correct. The login attempt is blocked.
+
+#Oleksandr Maksymikhin
+#Momtaz Yaqubi
+#Rafaa Ali
+#Derek Karungani
+#Myint Myat 
