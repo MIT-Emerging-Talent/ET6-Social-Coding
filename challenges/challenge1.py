@@ -26,3 +26,20 @@ Apply Boolean law to simplify it.
 Interpret what the final expression means in the context of allowing or blocking a login attempt.
 
 """
+
+def simplify_boolean(A: bool, B: bool) -> bool:
+    """
+    Simpidies ¬(A∧(B∨¬B)) to ¬A
+    
+    Args:
+        A (bool): The user has provided the correct login credentials
+        B (bool): The login attempt is from a trusted device
+
+    Returns:
+        bool: True if the login should be blocked; False otherwise.
+    """
+    
+    # B ∨¬B - is always True - Complement Law
+    # A ∧ True = A - Identity Law
+    # ¬A = not A - Simplification  
+    return not A
