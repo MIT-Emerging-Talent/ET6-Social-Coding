@@ -29,20 +29,6 @@ Interpret what the final expression means in the context of allowing or blocking
 
 A=bool()
 B=bool()
-SecurityCheck=bool()
-
-# Simplifying 
-# not(A and(B or not(B)))= not(A and 1)=not(A)
-
-SecurityCheck = not(A) 
-
-if SecurityCheck:
-    print ('Login incorrect. Please enter valid login')
-else: print ('Login correct.')
-
-
-#Interpretation: User hasn't provided correct login credentials
-
 
 def simplify_expression(A, B):
     # Original expression: ¬(A ∧ (B ∨ ¬B))
@@ -59,4 +45,7 @@ A = True  # User has correct credentials
 B = True  # Login attempt is from a trusted device
 
 result = simplify_expression(A, B)
-print(f"The simplified expression evaluates to: {result}")
+
+if result:
+    print ('Login incorrect. Please enter valid login')
+else: print ('Login correct.')

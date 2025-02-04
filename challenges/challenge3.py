@@ -20,3 +20,43 @@ Who is left out? Identify employees without access.
 Are there risks? Indicate employees who might be exposed to unnecessary data.
 Your output should visually highlight these relationships without explicitly listing them in a simple table or list. Think beyond just printing data—use a format that helps detect patterns at a glance.
 """
+"""
+import matplotlib.pyplot as plt 
+from matplotlib_venn import venn2
+
+finance_access = {"E0435", "E1021", "E3098", "E7642", "E8873", "E6590"}
+
+tech_access = {"E7642", "E8873", "E6590", "E9812", "E4520"}
+
+admin={"E0001"}
+
+new_employee={"E9999"}
+
+venn_values = (finance_access, tech_access, admin, new_employee)
+venn_labels = ('Finance', 'Tech', 'Admin', 'New employee')
+
+venn=venn2(subsets=venn_values, set_labels=venn_labels)
+plt.show()
+
+"""
+
+from matplotlib_venn import venn2
+import matplotlib.pyplot as plt
+
+finance_access = {"E0435", "E1021", "E3098", "E7642", "E8873", "E6590"}
+tech_access = {"E7642", "E8873", "E6590", "E9812", "E4520"}
+admin = {"E0001"}
+new_employee = {"E9999"}
+
+#Venn diagram
+venn2(subsets=(len(finance_access - tech_access),
+               len(tech_access - finance_access),
+               len(finance_access.intersection(tech_access))),
+      set_labels=("Finance Access", "Tech Access"))
+
+# For adding title and colors
+plt.title("Employee Access Control Visualization")
+plt.annotate("Admin: Full Access", xy=(-0.6, -0.5))
+plt.annotate("New Employee: No Access", xy=(-0.6, -0.6))
+plt.show()
+
