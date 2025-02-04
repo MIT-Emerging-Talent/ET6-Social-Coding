@@ -32,3 +32,27 @@ Perform the XOR operation directly on integers.
 Optionally convert the result back to binary with bin(), but focus on the XOR operation itself.
 
 """
+#Oleksandr Maksymikhin
+#Myint Myat
+#Rafaa Ali
+#Derek Karungani
+
+data_for_transmission_string = '1010101'
+data_for_transmission = int(data_for_transmission_string,2)
+security_key = int("1100110",2)
+checksum = data_for_transmission ^ security_key
+checksum_for_transmission = bin(checksum)
+
+
+
+def receiver_verify_data(data_for_transmission_string,checksum_for_transmission):
+    data_after_transmission = int(data_for_transmission_string,2)
+    receiver_checksum = data_after_transmission ^ security_key
+    
+    if receiver_checksum == checksum_for_transmission:
+        return "Transmission is successful"
+    else:
+        return "Transmission failed"
+      
+receiver_verify_data(data_for_transmission_string,checksum_for_transmission)
+      
