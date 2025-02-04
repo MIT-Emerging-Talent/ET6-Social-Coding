@@ -3,6 +3,15 @@
 Created on Thu Jan 30 15:30:30 2025
 
 @author: somai
+
+Group name: Salle 8
+Group members: Dadi Ishimwe
+              Robel Mengsteab
+              Safa Saber
+              Louis Kervens Hubert
+              M Jawid Mohseni
+              Mohamed El - nageeb
+
 Challenge 3: Access Visualization
 Objective
 Develop a visual representation of the company's access control system to identify patterns, overlaps, and security risks.
