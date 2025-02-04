@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jan 30 15:30:30 2025
-
 @author: somai
 Challenge 2: Digital Access Control
 Objective
@@ -27,5 +26,18 @@ Which employees currently lack access (but exist in the system)?
 Are there unnecessary overlaps in access that could pose a security risk?
 What changes would you recommend to enhance security and minimize excessive access?
 # -*- coding: utf-8 -*-
-
 """
+finance_access = {"E0435", "E1021", "E3098", "E7642", "E8873", "E6590"}
+tech_access = {"E7642", "E8873", "E6590", "E9812", "E4520"}
+admin = {"E0001"}
+new_employee = {"E9999"}
+# Who has access to at least one type of data?
+print("Who has access to at least one type of data? ", finance_access  | tech_access | admin)
+# Who has access to both financial and technical data?
+print("Who has access to both financial and technical data? ", (finance_access  & tech_access) | admin)
+# Who has exclusive access to only one type of data?
+print("Who has exclusive access to only one type of data? ", finance_access ^ tech_access)
+# Which employees currently lack access (but exist in the system)?
+print("Which employees currently lack access (but exist in the system)? ", new_employee)
+# Are there unnecessary overlaps in access that could pose a security risk?
+print("Are there unnecessary overlaps in access that could pose a security risk? No")
