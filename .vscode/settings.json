@@ -116,5 +116,8 @@
   "markdown.extension.toc.updateOnSave": false,
   "python.testing.unittestArgs": ["-v", "-s", ".", "-p", "test_*.py"],
   "python.testing.pytestEnabled": false,
-  "python.testing.unittestEnabled": true
+  "python.testing.unittestEnabled": true,
+  "githubPullRequests.ignoredPullRequestBranches": [
+    "main"
+  ]
 }
