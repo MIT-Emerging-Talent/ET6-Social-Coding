@@ -26,3 +26,26 @@ Apply Boolean law to simplify it.
 Interpret what the final expression means in the context of allowing or blocking a login attempt.
 
 """
+
+A=bool()
+B=bool()
+
+def simplify_expression(A, B):
+    # Original expression: ¬(A ∧ (B ∨ ¬B))
+    # Step 1: Simplify (B ∨ ¬B) to True
+    inner_expression = True  # Since B ∨ ¬B is always True
+    # Step 2: Simplify A ∧ True to A
+    intermediate_expression = A and inner_expression  # A ∧ True = A
+    # Step 3: Apply the negation
+    final_expression = not intermediate_expression  # ¬A
+    return final_expression
+
+# Example usage:
+A = True  # User has correct credentials
+B = True  # Login attempt is from a trusted device
+
+result = simplify_expression(A, B)
+
+if result:
+    print ('Login incorrect. Please enter valid login')
+else: print ('Login correct.')
