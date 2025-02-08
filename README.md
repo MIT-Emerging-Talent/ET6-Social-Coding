@@ -2,6 +2,16 @@
 
 This repository contains starter code and resources for Social Coding workshops covering 1-off fun subjects like generative art, coding competitions, code reading sessions or pseudocoding.
 
+**Group name: Salle 8**
+**Group members:** - Dadi Ishimwe
+              - Robel Mengsteab
+              - Safa Saber
+              - Louis Kervens Hubert
+              - M Jawid Mohseni
+              - Mohamed El - nageeb
+              - Franklyn Abanihe
+              - Mariia Ermishina
+
 ## Running Python Files in this Repository
 
 - **Running a plain Python script**:

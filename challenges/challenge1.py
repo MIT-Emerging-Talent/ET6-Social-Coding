@@ -2,6 +2,16 @@
 """
 Created on Thu Jan 30 15:30:30 2025
 
+Group name: Salle 8
+Group members: Dadi Ishimwe
+              Robel Mengsteab
+              Safa Saber
+              Louis Kervens Hubert
+              M Jawid Mohseni
+              Mohamed El - nageeb
+              Franklyn Abanihe
+              Mariia Ermishina
+
 @author: somai
 Challenge 1: Detecting Suspicious Login Attempts
 Objective:
@@ -26,3 +36,22 @@ Apply Boolean law to simplify it.
 Interpret what the final expression means in the context of allowing or blocking a login attempt.
 
 """
+#¬(A∧(B∨¬B))
+#¬(A∧(True))
+#¬(A∧(1))
+#¬(A)
+
+# the authentication system is blocked by incorrect login credentials and not whether the device is trusted or not.
+def check_login(A, B):
+    """
+    A: Correct credentials
+    B: Trusted device
+    Returns: Whether login should be blocked
+    """
+    return not A  # Simplified from ¬(A∧(B∨¬B))
+
+# Test cases
+print("Credentials correct, trusted device:", check_login(True, True))
+print("Credentials correct, untrusted device:", check_login(True, False))
+print("Credentials wrong, trusted device:", check_login(False, True))
+print("Credentials wrong, untrusted device:", check_login(False, False))
